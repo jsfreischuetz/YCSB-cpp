@@ -11,16 +11,16 @@
 #---------------------build config-------------------------
 
 # Database bindings
-BIND_WIREDTIGER ?= 0
-BIND_LEVELDB ?= 0
-BIND_ROCKSDB ?= 0
-BIND_LMDB ?= 0
-BIND_SQLITE ?= 0
+BIND_WIREDTIGER ?= 1
+BIND_LEVELDB ?= 1
+BIND_ROCKSDB ?= 1
+BIND_LMDB ?= 1
+BIND_SQLITE ?= 1
 
 # Extra options
 DEBUG_BUILD ?=
 EXTRA_CXXFLAGS ?=
-EXTRA_LDFLAGS ?=
+EXTRA_LDFLAGS ?= -ldl -lz -lsnappy -lzstd -lbz2 -llz4
 
 # HdrHistogram for tail latency report
 BIND_HDRHISTOGRAM ?= 1
