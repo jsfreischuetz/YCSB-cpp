@@ -1,4 +1,4 @@
-lmdb.dbpath=/tmp/ycsb-lmdb
+lmdb.dbpath=/users/zimooo2/database_data/ycsb-lmdb
 lmdb.mapsize=2147483648
 lmdb.nosync=true
 lmdb.nometasync=false

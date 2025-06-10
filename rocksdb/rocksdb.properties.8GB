@@ -1,4 +1,4 @@
-rocksdb.dbname=/tmp/ycsb-rocksdb
+rocksdb.dbname=/users/zimooo2/database_data/ycsb-rocksdb
 rocksdb.format=single
 rocksdb.destroy=false
 
